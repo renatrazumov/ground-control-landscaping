@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^$ public_html/groundcontrol/dist/ [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public_html/groundcontrol/dist/$1 [L]
